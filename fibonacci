@@ -1,0 +1,24 @@
+package nisha;
+
+public class fac {
+	int fib (int num) {
+		if (num<0) {
+			System.out.println("invalid");
+		}
+		else if(num==0||num==1) {
+			return num;
+			
+		}
+		else if(num>1) {
+			return(fib(num-2)+fib(num-1));
+		}
+		return 0;
+		
+	}
+	public static void main(String[] args) {
+		fac obj=new fac();
+		System.out.println(obj.fib(6));
+		
+	}
+
+}

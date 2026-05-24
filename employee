@@ -1,0 +1,29 @@
+package practice;
+class Employees{
+	private int empId;
+	private String empName;
+	
+	public void setEmpId(int id) {
+		empId=id;
+	}
+	
+	public void setEmpName(String name) {
+		empName=name;
+	}
+	public int getEmpld() {
+		return empId;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+}
+
+public class employee {
+public static void main(String[] args) {
+Employees e1=new Employees();
+e1.setEmpId(1771);
+e1.setEmpName("ishu");
+System.out.println(e1.getEmpld());
+System.out.println(e1.getEmpName());
+}
+}

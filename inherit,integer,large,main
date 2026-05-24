@@ -1,0 +1,133 @@
+package practice;
+class Animal{
+	void sound() {
+		System.out.println("Animal makes sound");
+	}
+}
+class Dog extends Animal{
+	void bark() {
+		System.out.println("Dogs barks");
+	}
+}
+public class inherit {
+	public static void main(String[] args) {
+	Dog d=new Dog();
+	d.sound();
+	d.bark();
+	}
+}
+
+
+package practice;
+
+import java.util.Scanner;
+
+public class integer {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int a= sc.nextInt();
+		int b= sc.nextInt();
+		System.out.println(a+b);
+	}
+
+}
+
+
+package practice;
+
+public class large {
+	public static void main(String[] args) {
+		int a=10,b=20,c=15;
+		if(a>b && a>c)
+			System.out.println(a);
+		else if(b>c)
+		System.out.println(b);
+		else
+			System.out.println(c);
+			
+	}
+
+}
+
+
+package practice;
+
+import java.util.Scanner;
+
+public class main {
+	static int square(int n) {
+		return n*n;
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int result=square(n);
+		System.out.println(result);
+		
+	}
+
+}
+
+
+package practice;
+
+class student{
+	int id;
+	String name;
+	
+	void display() {
+		System.out.println("Student Id: "+id);
+		System.out.println("Student Name: "+name);
+	}
+}
+public class ooh {
+public static void main(String[] args){
+	student s1=new student();
+	s1.id=101;
+	s1.name="Ishwarya";
+	s1.display();
+}
+
+}
+
+//poly 1
+package practice;
+class Addition{
+	int add(int a,int b) {
+		return a+b;	
+	}
+	int add(int a,int b,int c) {
+		return a+b+c;
+	}
+}
+
+public class poly1 {
+	public static void main(String[] args) {
+		Addition obj=new Addition();
+		System.out.println(obj.add(18, 26));
+		System.out.println(obj.add(89, 70, 8));
+	}
+}
+
+//poly 2
+package practice;
+class Vehicle{
+	void run() {
+		System.out.println("Vehicle is running");
+	}
+}
+class Bike extends Vehicle{
+	void run() {
+		System.out.println("Bike is running");
+	}
+	
+}
+
+public class poly2 {
+	public static void main(String[] args) {
+		Bike b=new Bike();
+		b.run();
+	}
+}
+
